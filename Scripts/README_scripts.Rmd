@@ -1,0 +1,14 @@
+---
+title: "README_Scripts"
+output: html_document
+date: '2022-09-14'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a README document for R scripts associated with the grizzly bear movement project.
+
+####grizzly_bear_dryad_data_pull_13092022###
+This script pulls data belonging to Ladle et al (2018) directly from DRYAD. 
