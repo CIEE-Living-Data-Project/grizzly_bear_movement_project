@@ -1,0 +1,32 @@
+---
+title: "Grizzly Bear Manuscript"
+author: "Olivia Rahn"
+date: '2022-09-15'
+output: pdf_document
+bibliography: gb_references.bib  
+csl: "botany.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Abstract
+
+#Introduction
+
+#Methods
+
+#Results
+
+#Discussion
+
+#References
+
+#Tables
+
+#Figure Captions
+
+#Figures
+
+#Appendices
