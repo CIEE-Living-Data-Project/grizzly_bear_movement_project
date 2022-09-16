@@ -1,0 +1,76 @@
+---
+title           : "Preregistration Template for Grizzly Bear Movement LDP Mini Project"
+shorttitle      : "Grizzly bear preregistration"
+date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
+
+author: 
+  - name        : Olivia Rahn
+    affiliation : 1
+
+affiliation:
+  - id          : 1
+    institution : McGill University
+
+output: prereg::prereg_pdf
+---
+
+<!-- To keep pre-registrations to a reasonable length for readers, we recommend answers fit within a single page .pdf document, roughly 3200 characters. Read more about this here: https://aspredicted.org/messages/why_limits.php -->
+
+
+## Data collection
+<!-- Have any data been collected for this study already? (Note: "Yes" is not an accepted answer.) -->
+
+**Yes**, data was collected by Ladle et al. as part of a study on grizzly bear movement and human recreation in southern alberta. These data were published in Ladle et al (2018). 
+
+
+## Hypothesis
+
+I will be asking 3 questions that can be addressed with existing data from Ladle et al. 
+
+Q1: Does the number of cubs impact the likelihood of a bear avoiding trails? 
+H1: The presence of young will promote more cautious behaviour from female bears with cubs, and therefore bear presence on trails with high probabilities of traffic will decrease with increasing numbers of cubs.
+
+Q2: Do younger bears stay closer to trails? 
+H2: Younger bears have had less time to develop a fear of humans, and are innately more curious. Therefore, younger bears will be more likely to frequent more highly trafficked areas.
+
+Q3: Are bears more likely to be near a road or trail if a stream is nearby? 
+H3: Streams are desirable habitat characteristics for grizzly bears, and therefore trails and roads that are closer to streams will be more likely to visited by grizzly bears.
+
+
+## Dependent variable
+
+There are 2 key dependent variables: (1) the probability of a bear being on a recreated trail with only non-motorized traffic and (2) the probability of a ber being on a trail or road with motorized traffic.
+
+## Conditions
+
+Q1: Dependent variables (1) and (2) will be tested against the different number of cubs associated with each bear tracked. 
+Q2: Dependent variables (1) and (2) will be tested against the different ages for bears tracked.
+Q3: Dependent variables (1) and (2) will be tested against the different distances to a stream for each bear occurrence recorded. 
+
+## Analyses
+
+Q1: Test relationship between # of cubs and average prob_motorized and prob_nonmotorized using lmer Q2:Test relationship between age and average prob_motorized and prob_nonmotorized using lmer 
+Q3: Test relationship between prob_motorized and prob_nonmotorized vs. distance to stream for all datapoints collected for each bear using lmer *might be more appropriate to use glmer given probability data
+
+## Outliers and exclusions
+
+I will exclude all outliers more than 2 standard deviations above the mean. 
+
+## Sample size
+
+42 individual bears were tracked in the study, and X number of bear occurrences were recorded (individual bears were tracked multiple times, some bears across multiple years)
+
+## Other
+
+
+## Study type
+
+Class project or assignment/Observational/archival study
+
+# References
+## 
+\vspace{-2pc}
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{-1in}
+\setlength{\parskip}{8pt}
+\noindent
