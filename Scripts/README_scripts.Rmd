@@ -10,5 +10,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This is a README document for R scripts associated with the grizzly bear movement project.
 
-####grizzly_bear_dryad_data_pull_13092022###
-This script pulls data belonging to Ladle et al (2018) directly from DRYAD. 
+####grizzly_bear_dryad_data_pull###
+This script pulls data belonging to Ladle et al (2018) directly from DRYAD. Data is then manually moved to the raw data folder. 
+
+####grizzly_bear_analysis########
+This script performs a basic analysis comparing grizzly bear presence in recreated areas to stream presence (a desirable habitat characteristic). 
