@@ -1,0 +1,12 @@
+---
+title: "README_manuscript"
+author: "Olivia Rahn"
+date: "2022-09-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a README document for the manuscript associated with the grizzly bear movement project. The manuscript is stored as a *.Rmd file and as a knitted pdf document in the manuscript folder. 

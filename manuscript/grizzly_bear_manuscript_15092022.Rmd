@@ -3,7 +3,7 @@ title: "Grizzly Bear Manuscript"
 author: "Olivia Rahn"
 date: '2022-09-15'
 output: pdf_document
-bibliography: gb_references.bib  
+bibliography: LDP_MiniProj_Fall2022.bib  
 csl: "botany.csl"
 ---
 
