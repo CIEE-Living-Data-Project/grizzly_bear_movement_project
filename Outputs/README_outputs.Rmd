@@ -1,0 +1,12 @@
+---
+title: "README_output"
+author: "Olivia Rahn"
+date: "2022-09-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is a README document associated with outputs including figures and tables for the grizzly bear movement project.  

@@ -18,7 +18,6 @@ groundhog.library(rdryad,date = "2022-04-20")
 #load filestrings 
 groundhog.library(filesstrings,date = "2022-04-20")
 
-
 # create directory for data
 dir.create("Data/")
 dir.create("Data/dryad")
@@ -27,16 +26,10 @@ dir.create("Data/dryad")
 dryad_download(dois = "10.5061/dryad.nq68420")
 
 ##you now need to go into Library > Caches > R > rdryad > Data and R code to manually unzip the file
+#move to R project file /Data/downloaded
 
-#moving files into R project
+#could also move files into R project this way
 move_files(c("~/Library/Caches/R/rdryad/Data_and_Rcode/gbears_sex.csv",
              "~/Library/Caches/R/rdryad/Data_and_Rcode/gbears_used_available_final.csv"),
            "C:/Users/oliviarahn/Desktop/grizzly_bear_movement_project_LDP/Data/dryad/", 
            overwrite = FALSE)
-
-
-
-
-
-
-

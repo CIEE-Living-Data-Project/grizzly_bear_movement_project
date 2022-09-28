@@ -4,14 +4,14 @@
 ####################Olivia Rahn#######################
 #################September 26 2022####################
 
-
-#going to do some basic analyses of grizzly bear dataset
+#doing some basic analyses of grizzly bear dataset
 
 #loading necessary packages
 library(ggplot2)
 
 #loading dataset
-grizzly_bear_movement <- read.csv("~/Data/downloaded/gbears_used_available_final.csv") #movement data
+getwd()
+grizzly_bear_movement <- read.csv("Data/raw_data/gbears_used_available_final.csv") #movement data
 
 #going to run a quick analysis to answer one of my questions proposed in the outline of my project 
 #does distance to a stream impact the likelihood of a bear being in a motorized or non-motorized recreational area
@@ -26,12 +26,16 @@ non_motorized_prob_model <- lm(prob_non_motorised ~ d_stream, data = grizzly_bea
 summary(non_motorized_prob_model)
 #distance from a stream has a significant effect for motorized
 
-#visalize
+#visualize
 non_motorized_plot <- ggplot(grizzly_bear_movement, aes(d_stream,prob_non_motorised)) +
-  geom_point()+
+  geom_point() + 
   stat_smooth(method = "lm")
+#saving to outputs folder
+pdf("Outputs/non_motorized_plot.pdf")
 
 motorized_plot <- ggplot(grizzly_bear_movement, aes(d_stream,prob_motorised)) +
   geom_point()+
   stat_smooth(method = "lm")
+pdf("Outputs/motorized_plot.pdf")
+
 
