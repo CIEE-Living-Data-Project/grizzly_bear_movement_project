@@ -1,0 +1,76 @@
+---
+title: "Grizzly Bear Manuscript"
+author: "Olivia Rahn"
+date: '2022-09-15'
+output: pdf_document
+bibliography: LDP_MiniProj_Fall2022.bib  
+csl: "botany.csl"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# ABSTRACT
+
+Large fauna are often found in areas recreated by humans, and we often presume that human recreation disrupts the movement of large fauna. This study tests variation in the presence of grizzly bears in recreated areas of southern Alberta. 
+
+Key words: ecology, recreation ecology, human wildlife interactions, conservation 
+
+# INTRODUCTION 
+
+-Humans are present in increasing amounts of habitat for large fauna, partially due to the development of trail networks and recreational areas in previously pristine habitat
+-This may disrupt the movement of large fauna
+-Grizzly bears are a critical species in Alberta and face significant risks because of human activity, particularly when vehicles are involved
+-This study tests how age, habitat characteristics, and offspring (i.e. presence of young) affect how grizzly bears interact with recreated areas.
+
+# METHODS
+
+Data were collected by Ladle et al. (2018) using 42 individual bears in southern Alberta. Movement of bears was tracked using radio collars and wildlife cameras set up in areas of interest. Human presence was estimated using surveys of recreated areas where researchers counted the number of vehicles and people observed in a 1 hour timespan. 
+
+# RESULTS
+
+My analyses of these data show that the presence of a desirable habitat characteristic (a stream) increases the likelihood of bears being in a recreated area, regardless of the presence of motor vehicles. 
+
+# DISCUSSION
+
+-Recreated areas with streams (good habitat) are more likely to result in human-bear interactions
+
+# REFERENCES
+
+# TABLES
+
+# FIGURES
+
+```{r echo=FALSE, fig.height=5, fig.width=11}
+
+#necessary library
+library(ggplot2)
+#read in csv
+grizzly_bear_movement <- read.csv("/Users/oliviarahn/Desktop/grizzly_bear_movement_project_LDP/Data/raw_data/gbears_used_available_final.csv")
+
+###model for probability of bear presence in motorized recreation areas vs. stream presence
+motorized_prob_model <- lm(prob_motorised ~ d_stream, data = grizzly_bear_movement)
+summary(motorized_prob_model)
+#visualize
+plot(motorized_prob_model)
+
+###model for probability of bear presence in non-motorized recreation areas vs. stream presence
+non_motorized_prob_model <- lm(prob_non_motorised ~ d_stream, data = grizzly_bear_movement)
+summary(non_motorized_prob_model)
+#visualize
+plot(non_motorized_prob_model)
+
+```
+
+# FIGURE CAPTIONS
+
+**Figure 1.** Probability of grizzly bear presence in a recreated area with motor vehicles present as a function of proximity of the area to a stream.
+
+**Figure 2.** Probability of grizzly bear presence in a recreated area with no motor vehicles present as a function of proximity of the area to a stream.
+
+# APPENDICES
+
+# DATA AND REPRODUCIBILITY STATEMENT
+
+Data and reproducible code are freely available on GitHub at <https://github.com/CIEE-Living-Data-Project/grizzly_bear_movement_project>
