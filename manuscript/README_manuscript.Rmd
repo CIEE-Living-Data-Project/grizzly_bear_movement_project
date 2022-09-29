@@ -10,3 +10,5 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 This is a README document for the manuscript associated with the grizzly bear movement project. The manuscript is stored as a *.Rmd file and as a knitted pdf document in the manuscript folder. 
+
+Figures generated in the manuscript are done using the "plot" function, but alternate figures made using ggplot and showing trendlines are present in the "outputs" folder. 
