@@ -23,6 +23,7 @@ Key words: ecology, recreation ecology, human wildlife interactions, conservatio
 -This may disrupt the movement of large fauna
 -Grizzly bears are a critical species in Alberta and face significant risks because of human activity, particularly when vehicles are involved
 -This study tests how age, habitat characteristics, and offspring (i.e. presence of young) affect how grizzly bears interact with recreated areas.
+[@Ladle2018]
 
 # METHODS
 
@@ -37,6 +38,9 @@ My analyses of these data show that the presence of a desirable habitat characte
 -Recreated areas with streams (good habitat) are more likely to result in human-bear interactions
 
 # REFERENCES
+
+::: {#refs}
+:::
 
 # TABLES
 
@@ -62,6 +66,7 @@ summary(non_motorized_prob_model)
 plot(non_motorized_prob_model)
 
 ```
+
 
 # FIGURE CAPTIONS
 
