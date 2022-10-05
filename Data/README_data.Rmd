@@ -11,5 +11,5 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This is a README file for data related to the grizzly bear movement project
 
-Raw data is downloaded from Dryad using the grizzly_bear_data_pull script and stored in the "raw data" folder. Downloaded data was moved manually from its downloaded location to the raw data folder. 
+Raw data is downloaded from Dryad using the grizzly_bear_data_pull script and stored in the "raw data" folder. Downloaded data was moved manually from its downloaded location to the raw data folder. The "gbears_used_available" file must be downloaded using the "grizzly_bear_dryad_data" script in the "Scripts" folder, as the file size does not allow it to be pulled from Github. 
 
